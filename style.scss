@@ -1,0 +1,70 @@
+@import "./assets/partials/reset";
+@import "./assets/partials/color";
+@import "./assets/partials/font";
+@import "./assets/partials/spacings";
+@import "./assets/partials/button";
+@import "./assets/partials/mixins";
+@import "./assets/partials/animation";
+
+body {
+  color: #f4f4f4;
+}
+nav {
+  background-color: yellow;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 30px;
+  align-items: center;
+  div {
+    img {
+      height: 80px;
+      object-fit: cover;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 8px;
+    }
+  }
+}
+main {
+  padding-block: 20px;
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    background-color: #640fc5;
+
+    .titolo {
+      width: 50%;
+      h1 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 5px;
+      }
+
+      .immagine {
+        width: 50%;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .sottoeroe {
+    display: flex;
+    div {
+      width: 25%;
+      padding: 10px;
+      box-sizing: border-box;
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+}
